@@ -1,611 +1,715 @@
 <!DOCTYPE html>
 <html lang="zh-HK">
-<head>
-  <meta charset="UTF-8" />
-  <title>2025 年品牌選舉頒獎典禮暨晚宴 - 訂購場刊、吊旗廣告及贊助枱獎 電子回條</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root {
-      --primary: #003366;
-      --primary-light: #e6f0ff;
-      --accent: #c2953f;
-      --bg: #f5f5f7;
-      --border: #d0d0d5;
-      --danger: #c0392b;
-      --text: #222;
-      --muted: #666;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      2025 年品牌選舉頒獎典禮暨晚宴 - 訂購場刊、吊旗廣告及贊助枱獎 電子回條
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --primary: #003366;
+        --primary-light: #e5ecf5;
+        --accent: #c59d37;
+        --border: #dcdcdc;
+        --bg: #f5f5f7;
+        --error: #c62828;
+        --text-main: #222;
+        --text-muted: #555;
+        --radius: 8px;
+      }
 
-    * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang HK",
-        "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-    }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang HK",
+          "PingFang TC", "Microsoft JhengHei", sans-serif;
+        background: var(--bg);
+        color: var(--text-main);
+      }
 
-    .page {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 16px;
-    }
+      .page {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+      }
 
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
+      .container {
+        width: 100%;
+        max-width: 900px;
+        background: #fff;
+        border-radius: var(--radius);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        padding: 20px 18px 28px;
+      }
 
-    .logo-wrap {
-      text-align: center;
-      margin-bottom: 12px;
-    }
+      @media (min-width: 768px) {
+        .container {
+          padding: 28px 32px 36px;
+        }
+      }
 
-    .logo-wrap img {
-      max-width: 120px;
-      height: auto;
-    }
+      header {
+        border-bottom: 2px solid var(--primary);
+        padding-bottom: 12px;
+        margin-bottom: 18px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
 
-    h1 {
-      font-size: 1.4rem;
-      margin: 0;
-      color: var(--primary);
-      text-align: center;
-    }
+      header img.logo {
+        height: 48px;
+        width: auto;
+      }
 
-    h2 {
-      font-size: 1.1rem;
-      margin: 8px 0 0;
-      text-align: center;
-      color: var(--primary);
-    }
+      header .title-block {
+        flex: 1;
+        min-width: 200px;
+      }
 
-    h3 {
-      font-size: 1rem;
-      margin-top: 0;
-      border-left: 4px solid var(--primary);
-      padding-left: 8px;
-    }
+      header h1 {
+        font-size: 1.1rem;
+        margin: 0;
+        color: var(--primary);
+        font-weight: 600;
+      }
 
-    p { margin: 6px 0; font-size: 0.92rem; }
-    small { font-size: 0.8rem; color: var(--muted); }
+      header h2 {
+        font-size: 0.95rem;
+        margin: 4px 0 0;
+        color: var(--text-main);
+        font-weight: 500;
+      }
 
-    .section {
-      border-top: 1px solid var(--border);
-      margin-top: 16px;
-      padding-top: 16px;
-    }
+      .description {
+        background: var(--primary-light);
+        border-radius: 6px;
+        padding: 10px 12px;
+        font-size: 0.9rem;
+        margin-bottom: 18px;
+        line-height: 1.6;
+      }
 
-    .field-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 10px;
-    }
+      .description strong {
+        color: var(--primary);
+      }
 
-    .field {
-      flex: 1 1 220px;
-      min-width: 0;
-    }
+      .section {
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 14px 12px;
+        margin-bottom: 14px;
+      }
 
-    label {
-      display: block;
-      font-size: 0.88rem;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
+      @media (min-width: 768px) {
+        .section {
+          padding: 18px 16px;
+          margin-bottom: 18px;
+        }
+      }
 
-    label .required { color: var(--danger); margin-left: 2px; }
+      .section h3 {
+        margin: 0 0 10px;
+        font-size: 1rem;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        flex-wrap: wrap;
+      }
 
-    input[type="text"],
-    input[type="tel"],
-    input[type="email"],
-    input[type="number"],
-    textarea,
-    select {
-      width: 100%;
-      padding: 8px 10px;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-      font-size: 0.9rem;
-      font-family: inherit;
-      transition: border-color 0.15s, box-shadow 0.15s;
-    }
+      .required {
+        color: var(--error);
+        font-size: 0.9rem;
+      }
 
-    input:focus,
-    textarea:focus,
-    select:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 2px var(--primary-light);
-    }
+      .field-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 14px;
+      }
 
-    textarea {
-      min-height: 80px;
-      resize: vertical;
-    }
+      .field {
+        flex: 1 1 180px;
+        min-width: 150px;
+      }
 
-    .checkbox-group,
-    .radio-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      font-size: 0.9rem;
-    }
+      .field label {
+        display: inline-block;
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+      }
 
-    .checkbox-item,
-    .radio-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 6px;
-    }
+      .field input,
+      .field textarea,
+      .field select {
+        width: 100%;
+        padding: 6px 8px;
+        border-radius: 4px;
+        border: 1px solid var(--border);
+        font-size: 0.9rem;
+        font-family: inherit;
+      }
 
-    .checkbox-item input,
-    .radio-item input { margin-top: 3px; }
+      .field textarea {
+        resize: vertical;
+        min-height: 60px;
+      }
 
-    .helper {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-top: 2px;
-    }
+      .hint {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        margin-top: 2px;
+      }
 
-    .note {
-      background: var(--primary-light);
-      border-left: 4px solid var(--primary);
-      padding: 10px 12px;
-      border-radius: 4px;
-      margin-bottom: 12px;
-      font-size: 0.88rem;
-    }
+      .checkbox-group,
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-size: 0.9rem;
+      }
 
-    .subtitle {
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
+      .checkbox-item,
+      .radio-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 6px;
+      }
 
-    .alert {
-      background: #fdecea;
-      border-left: 4px solid var(--danger);
-      padding: 8px 12px;
-      border-radius: 4px;
-      margin-top: 8px;
-      font-size: 0.85rem;
-      color: var(--danger);
-    }
+      .checkbox-item input,
+      .radio-item input {
+        margin-top: 2px;
+      }
 
-    .alert.hidden { display: none; }
+      .sub-note {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin: 4px 0 0 0;
+      }
 
-    .success {
-      background: #e8f8f0;
-      border-left: 4px solid #1e874b;
-      padding: 10px 12px;
-      border-radius: 4px;
-      margin-top: 12px;
-      font-size: 0.9rem;
-      color: #1e874b;
-    }
+      .sub-section-title {
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin: 6px 0 4px;
+        color: var(--text-main);
+      }
 
-    .success.hidden { display: none; }
+      .alert {
+        margin-top: 6px;
+        padding: 6px 8px;
+        border-radius: 4px;
+        background: #fdecea;
+        color: var(--error);
+        font-size: 0.85rem;
+      }
 
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 8px;
-      margin-top: 16px;
-    }
+      .alert.hidden {
+        display: none;
+      }
 
-    button {
-      border-radius: 999px;
-      border: none;
-      padding: 8px 18px;
-      font-size: 0.9rem;
-      cursor: pointer;
-      font-family: inherit;
-      transition: background 0.15s, transform 0.05s, box-shadow 0.15s;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
+      .terms {
+        font-size: 0.85rem;
+        line-height: 1.7;
+        color: var(--text-muted);
+      }
 
-    button.primary {
-      background: var(--primary);
-      color: #fff;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
-    }
+      .terms h4 {
+        margin: 8px 0 4px;
+        font-size: 0.9rem;
+        color: var(--text-main);
+      }
 
-    button.primary:hover { background: #00224a; }
-    button.primary:active {
-      transform: translateY(1px);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    }
+      .footer-note {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        margin-top: 4px;
+      }
 
-    button.secondary {
-      background: #e0e0e5;
-      color: #333;
-    }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+        justify-content: flex-end;
+      }
 
-    button.secondary:hover { background: #d0d0d7; }
+      button {
+        border-radius: 999px;
+        padding: 8px 18px;
+        border: none;
+        font-size: 0.9rem;
+        font-family: inherit;
+        cursor: pointer;
+      }
 
-    @media (max-width: 600px) {
-      .card { padding: 16px; }
-      h1 { font-size: 1.2rem; }
-      h2 { font-size: 1rem; }
-    }
+      button[type="reset"] {
+        background: #e0e0e0;
+        color: #333;
+      }
 
-    .small-text { font-size: 0.85rem; }
-  </style>
-</head>
-<body>
-  <div class="page">
-    <form
-      id="brandForm"
-      class="card"
-      method="POST"
-      action="https://formsubmit.co/amr3@cma.org.hk"
-      novalidate
-    >
-      <!-- Formsubmit hidden 設定 -->
-      <input
-        type="hidden"
-        name="_subject"
-        value="2025 年品牌選舉頒獎典禮暨晚宴 - 訂購場刊及贊助枱獎電子回條"
-      />
-      <!-- TODO: 將 你的帳號 / 你的repo名 改成你實際的 GitHub 帳號及 repo 名 -->
-      <input
-  type="hidden"
-  name="_next"
-  value="https://florencechung-cma.github.io/2025-Brand-Awards-Ceremony-PW-Order-/thanks.html"
-/>
-      <input type="hidden" name="_template" value="table" />
-      <input type="text" name="_honey" style="display:none" />
-      <input type="hidden" name="_captcha" value="false" />
+      button[type="submit"] {
+        background: var(--primary);
+        color: #fff;
+      }
 
-      <header style="margin-bottom: 16px;">
-        <div class="logo-wrap">
-          <img src="logo-bdc.png" alt="BDC Logo" />
-        </div>
+      button[type="submit"]:hover {
+        background: #00224a;
+      }
 
-        <h1>2025 年品牌選舉頒獎典禮暨晚宴</h1>
-        <h2>訂購場刊、吊旗廣告及贊助枱獎 電子回條</h2>
-      </header>
+      .success-message {
+        display: none;
+        margin-top: 10px;
+        padding: 8px 10px;
+        border-radius: 4px;
+        background: #e8f5e9;
+        color: #2e7d32;
+        font-size: 0.85rem;
+      }
 
-      <!-- 下面內容與你原本一樣，無改動 -->
-      <section class="section" id="section-intro">
-        <h3>活動簡介</h3>
-        <p class="small-text">
-          2025 年「品牌選舉」頒獎典禮暨晚宴定於
-          <strong>2026 年 2 月 3 日（星期二）晚上 7 時</strong>
-          假香港會議展覽中心會議廳舉行。品牌局將特別製作場刊，並於晚宴設置場刊廣告、現場吊旗廣告及枱獎贊助，以供歷屆「品牌選舉」得獎公司及品牌局會員公司參與。
-        </p>
-        <p class="small-text">
-          有意訂購廣告或贊助枱獎者，請於
-          <strong>1 月 9 日或以前</strong>
-          提交本電子回條。如有查詢，請聯絡本局梁小姐（電話：2542 8698）。
-        </p>
-      </section>
+      .success-message.show {
+        display: block;
+      }
 
-      <section class="section" id="section-company">
-        <h3>一、公司及聯絡資料</h3>
-        <div class="field-group">
-          <div class="field">
-            <label>公司名稱<span class="required">*</span></label>
-            <input type="text" name="公司名稱" required />
+      .logo-placeholder {
+        width: 72px;
+        height: 72px;
+        border-radius: 8px;
+        background: #fff;
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        color: var(--text-muted);
+      }
+
+      @media (max-width: 480px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .logo-placeholder {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <header>
+          <!-- 如已有 logo 圖片，改成 <img src="logo-bdc.png" class="logo" alt="香港品牌發展局 Logo" /> -->
+          <div class="logo-placeholder">LOGO</div>
+          <div class="title-block">
+            <h1>2025 年品牌選舉頒獎典禮暨晚宴</h1>
+            <h2>訂購場刊、吊旗廣告及贊助枱獎 電子回條</h2>
           </div>
-          <div class="field">
-            <label>品牌名稱</label>
-            <input type="text" name="品牌名稱" />
+        </header>
+
+        <div class="description">
+          <p>
+            2025 年「品牌選舉」頒獎典禮暨晚宴定於
+            <strong>2026 年 2 月 3 日（星期二）晚上 7 時</strong>
+            假香港會議展覽中心會議廳舉行。品牌局將特別製作場刊，並於晚宴設置場刊廣告、現場吊旗廣告及枱獎贊助，以供歷屆「品牌選舉」得獎公司及品牌局會員公司參與。
+          </p>
+          <p>
+            有意訂購廣告或贊助枱獎者，請於
+            <strong>1 月 9 日或以前</strong>
+            提交本電子回條。如有查詢，請聯絡本局梁小姐（電話：2542 8698）。
+          </p>
+        </div>
+
+        <form
+          id="orderForm"
+          action="https://formsubmit.co/sor1@cma.org.hk"
+          method="POST"
+          novalidate
+        >
+          <!-- 成功後跳轉頁面 -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://florencechung-cma.github.io/2025-Brand-Awards-Ceremony-PW-Order-/thanks.html"
+          />
+          <!-- 防止機械人 -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <!-- 一、公司及聯絡資料 -->
+          <section class="section" id="section-company">
+            <h3>一、公司及聯絡資料</h3>
+            <div class="field-group">
+              <div class="field">
+                <label>公司名稱 <span class="required">*</span></label>
+                <input type="text" name="公司名稱" required />
+              </div>
+              <div class="field">
+                <label>品牌名稱</label>
+                <input type="text" name="品牌名稱" />
+              </div>
+              <div class="field">
+                <label>聯絡人姓名 <span class="required">*</span></label>
+                <input type="text" name="聯絡人姓名" required />
+              </div>
+              <div class="field">
+                <label>聯絡電話 <span class="required">*</span></label>
+                <input type="tel" name="聯絡電話" required />
+              </div>
+              <div class="field">
+                <label>圖文傳真</label>
+                <input type="text" name="圖文傳真" />
+              </div>
+              <div class="field">
+                <label>電子郵件 <span class="required">*</span></label>
+                <input type="email" name="電子郵件" required />
+              </div>
+            </div>
+            <div id="companyError" class="alert hidden">
+              請填寫所有標有「*」的公司及聯絡資料欄位。
+            </div>
+          </section>
+
+          <!-- 二、本公司擬訂購／贊助項目 -->
+          <section class="section" id="section-options">
+            <h3>二、本公司擬訂購／贊助項目 <span class="required">*</span></h3>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" name="項目A_晚宴場刊廣告" />
+                <span>A. 晚宴場刊廣告</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="項目B_現場吊旗雙面廣告" />
+                <span>B. 現場吊旗雙面廣告（位置有限，先到先得）</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="項目C_套餐優惠" />
+                <span>C. 晚宴場刊及現場吊旗雙面廣告套餐優惠價（先到先得）</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="項目D_贊助枱獎" />
+                <span>D. 贊助枱獎</span>
+              </label>
+            </div>
+            <div class="sub-note">
+              請至少選擇一項 A / B / C / D。
+            </div>
+            <div id="itemsError" class="alert hidden">
+              請至少選擇一項 A / B / C / D。
+            </div>
+          </section>
+
+          <!-- A. 晚宴場刊廣告 -->
+          <section class="section" id="section-ad-booklet">
+            <h3>A. 晚宴場刊廣告</h3>
+            <div class="sub-note">
+              版面（彩色）、尺寸及定價：<br />
+              全版內頁廣告：210mm (W) x 297mm (H)；四邊預留 3mm 出血位 –
+              港幣 $10,000<br />
+              半版內頁廣告：210mm (W) x 148mm (H)；四邊預留 3mm 出血位 –
+              港幣 $6,000
+            </div>
+
+            <div class="sub-section-title">晚宴場刊廣告版面選擇</div>
+            <div class="radio-group">
+              <label class="radio-item">
+                <input
+                  type="radio"
+                  name="晚宴場刊廣告版面"
+                  value="全版內頁廣告（$10,000）"
+                />
+                <span>全版內頁廣告（$10,000）</span>
+              </label>
+              <label class="radio-item">
+                <input
+                  type="radio"
+                  name="晚宴場刊廣告版面"
+                  value="半版內頁廣告（$6,000）"
+                />
+                <span>半版內頁廣告（$6,000）</span>
+              </label>
+              <label class="radio-item">
+                <input
+                  type="radio"
+                  name="晚宴場刊廣告版面"
+                  value="不訂購 / 不適用"
+                  checked
+                />
+                <span>不訂購 / 不適用</span>
+              </label>
+            </div>
+          </section>
+
+          <!-- B. 現場吊旗雙面廣告 -->
+          <section class="section" id="section-banner">
+            <h3>B. 現場吊旗雙面廣告</h3>
+            <div class="sub-note">
+              廣告資料：<br />
+              尺寸：4.5’(W) x 8’(H)；四邊預留 3mm 出血位<br />
+              定價：港幣 $8,000（包括廣告位置及製作，設計檔案由客戶提供）<br />
+              位置有限，先到先得。
+            </div>
+
+            <div class="sub-section-title">
+              是否確認訂購現場吊旗雙面廣告
+            </div>
+            <div class="radio-group">
+              <label class="radio-item">
+                <input
+                  type="radio"
+                  name="現場吊旗雙面廣告"
+                  value="是，確認訂購（$8,000）"
+                />
+                <span>是，確認訂購（$8,000）</span>
+              </label>
+              <label class="radio-item">
+                <input
+                  type="radio"
+                  name="現場吊旗雙面廣告"
+                  value="否 / 不適用"
+                  checked
+                />
+                <span>否 / 不適用</span>
+              </label>
+            </div>
+          </section>
+
+          <!-- C. 晚宴場刊及現場吊旗雙面廣告套餐優惠 -->
+          <section class="section" id="section-package">
+            <h3>C. 晚宴場刊及現場吊旗雙面廣告套餐優惠</h3>
+            <div class="sub-note">
+              套餐內容及價目：<br />
+              全版內頁廣告 + 吊旗雙面廣告：原價 $18,000，優惠套餐價
+              $16,200<br />
+              半版內頁廣告 + 吊旗雙面廣告：原價 $14,000，優惠套餐價
+              $12,600
+            </div>
+
+            <div class="sub-section-title">套餐類別選擇</div>
+            <div class="radio-group">
+              <label class="radio-item">
+                <input
+                  type="radio"
+                  name="套餐類別"
+                  value="全版內頁廣告 + 吊旗雙面廣告（套餐價：$16,200）"
+                />
+                <span>全版內頁廣告 + 吊旗雙面廣告（套餐價：$16,200）</span>
+              </label>
+              <label class="radio-item">
+                <input
+                  type="radio"
+                  name="套餐類別"
+                  value="半版內頁廣告 + 吊旗雙面廣告（套餐價：$12,600）"
+                />
+                <span>半版內頁廣告 + 吊旗雙面廣告（套餐價：$12,600）</span>
+              </label>
+              <label class="radio-item">
+                <input
+                  type="radio"
+                  name="套餐類別"
+                  value="不訂購 / 不適用"
+                  checked
+                />
+                <span>不訂購 / 不適用</span>
+              </label>
+            </div>
+          </section>
+
+          <!-- D. 贊助枱獎 -->
+          <section class="section" id="section-sponsorship">
+            <h3>D. 贊助枱獎</h3>
+            <div class="sub-note">
+              禮物擬由得獎公司以產品或產品代用券形式贊助，數量約為
+              80–100 件。<br />
+              贊助物品請於
+              <strong>2026 年 1 月 19 至 20 日</strong>
+              期間送交：香港中環干諾道中 64 號廠商會大廈 23 樓 B 室。
+            </div>
+
+            <div class="field-group" style="margin-top: 10px">
+              <div class="field">
+                <label>產品名稱</label>
+                <input type="text" name="贊助產品名稱" />
+              </div>
+              <div class="field">
+                <label>數量</label>
+                <input type="number" name="贊助數量" min="0" />
+              </div>
+              <div class="field">
+                <label>產品價值（請註明為每件或總值）</label>
+                <input type="text" name="贊助產品價值" />
+              </div>
+            </div>
+            <div class="field" style="margin-top: 8px">
+              <label>產品尺寸（體積／包裝大小等）</label>
+              <textarea name="贊助產品尺寸"></textarea>
+            </div>
+          </section>
+
+          <!-- 重要說明及條款 -->
+          <section class="section" id="section-terms">
+            <h3>重要說明及條款</h3>
+            <div class="terms">
+              <h4>廣告來稿標準：</h4>
+              <p>
+                廣告檔案類型：AI、JPEG、TIF<br />
+                解像度：350 DPI 或以上<br />
+                廣告檔案最遲須於
+                <strong>1 月 14 日中午 12 時前</strong>
+                ，以電郵發送至秘書處（sor1@cma.org.hk）。
+              </p>
+
+              <h4>付款安排（適用於訂購廣告項目）：</h4>
+              <p>
+                請將劃線支票祈付「香港品牌發展局有限公司」，逕交本局：<br />
+                地址：香港中環干諾道中 64 號廠商會大廈 3 樓。
+              </p>
+
+              <h4>活動安排：</h4>
+              <p>
+                主辦機構有權因應特別情況而變更頒獎典禮暨晚宴的時間、形式及安排，無需事先通知。
+              </p>
+            </div>
+          </section>
+
+          <!-- 資料確認 -->
+          <section class="section" id="section-confirm">
+            <h3>資料確認 <span class="required">*</span></h3>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" name="確認同意條款" />
+                <span>
+                  本人／本公司確認上述資料正確無誤，並同意相關條款及安排。
+                </span>
+              </label>
+            </div>
+            <div id="confirmError" class="alert hidden">
+              請勾選確認同意條款及安排。
+            </div>
+          </section>
+
+          <!-- 其他備註 -->
+          <section class="section" id="section-remarks">
+            <h3>其他備註或特別要求</h3>
+            <div class="field">
+              <textarea name="其他備註或特別要求"></textarea>
+            </div>
+          </section>
+
+          <div class="footer-note">
+            提示：如表格部分資料未填妥，系統會提示相關欄位，請檢查後再嘗試提交。
           </div>
-        </div>
-        <div class="field-group">
-          <div class="field">
-            <label>聯絡人姓名<span class="required">*</span></label>
-            <input type="text" name="聯絡人姓名" required />
+
+          <div class="actions">
+            <button type="reset">重設</button>
+            <button type="submit">提交電子回條</button>
           </div>
-          <div class="field">
-            <label>聯絡電話<span class="required">*</span></label>
-            <input type="tel" name="聯絡電話" required />
+
+          <div id="formError" class="alert hidden">
+            表格部分資料未填妥，請檢查上面提示後再嘗試提交。
           </div>
-        </div>
-        <div class="field-group">
-          <div class="field">
-            <label>圖文傳真</label>
-            <input type="text" name="圖文傳真" />
+          <div id="successMessage" class="success-message">
+            已成功提交！系統將把回覆內容透過電郵傳送至秘書處。如未在數分鐘內收到電郵，請檢查垃圾郵件箱或與秘書處聯絡。
           </div>
-          <div class="field">
-            <label>電子郵件<span class="required">*</span></label>
-            <input type="email" name="電郵" required />
-          </div>
-        </div>
-      </section>
+        </form>
+      </div>
+    </div>
 
-      <section class="section" id="section-options">
-        <h3>二、本公司擬訂購／贊助項目<span class="required">*</span></h3>
-        <div class="checkbox-group">
-          <label class="checkbox-item">
-            <input type="checkbox" name="項目A_晚宴場刊廣告" />
-            <span>A. 晚宴場刊廣告</span>
-          </label>
-          <label class="checkbox-item">
-            <input type="checkbox" name="項目B_現場吊旗雙面廣告" />
-            <span>B. 現場吊旗雙面廣告（位置有限，先到先得）</span>
-          </label>
-          <label class="checkbox-item">
-            <input type="checkbox" name="項目C_套餐優惠" />
-            <span>C. 晚宴場刊及現場吊旗雙面廣告套餐優惠價（先到先得）</span>
-          </label>
-          <label class="checkbox-item">
-            <input type="checkbox" name="項目D_贊助枱獎" />
-            <span>D. 贊助枱獎</span>
-          </label>
-       <!-- 新增：不適用 -->
-    <label class="checkbox-item">
-      <input type="checkbox" name="項目E_不適用" />
-      <span>不適用</span>
-    </label>
-  </div>
-  <div id="itemsError" class="alert hidden">
-    請至少選擇一項 A / B / C / D 或「不適用」。
-  </div>
-</section>
+    <script>
+      const form = document.getElementById("orderForm");
+      const formError = document.getElementById("formError");
+      const successMessage = document.getElementById("successMessage");
+      const companyError = document.getElementById("companyError");
+      const itemsError = document.getElementById("itemsError");
+      const confirmError = document.getElementById("confirmError");
 
-      <section class="section" id="section-A">
-        <h3>A. 晚宴場刊廣告</h3>
-        <div class="note">
-          <div class="subtitle">版面（彩色）、尺寸及定價：</div>
-          <ul class="small-text" style="margin:4px 0 0 16px;padding-left:0;">
-            <li>全版內頁廣告：210mm (W) x 297mm (H)；四邊預留 3mm 出血位 – 港幣 $10,000</li>
-            <li>半版內頁廣告：210mm (W) x 148mm (H)；四邊預留 3mm 出血位 – 港幣 $6,000</li>
-          </ul>
-        </div>
-        <div class="field">
-          <label>晚宴場刊廣告版面選擇</label>
-          <div class="radio-group">
-            <label class="radio-item">
-              <input type="radio" name="A_場刊版面" value="全版內頁廣告（$10,000）" />
-              <span>全版內頁廣告（$10,000）</span>
-            </label>
-            <label class="radio-item">
-              <input type="radio" name="A_場刊版面" value="半版內頁廣告（$6,000）" />
-              <span>半版內頁廣告（$6,000）</span>
-            </label>
-            <label class="radio-item">
-              <input type="radio" name="A_場刊版面" value="不訂購 / 不適用" />
-              <span>不訂購 / 不適用</span>
-            </label>
-          </div>
-        </div>
-      </section>
+      // 驗證「公司及聯絡資料」必填
+      function validateCompanySection() {
+        const requiredFields = ["公司名稱", "聯絡人姓名", "聯絡電話", "電子郵件"];
+        let ok = true;
+        requiredFields.forEach((name) => {
+          const input = form.elements[name];
+          if (!input || !input.value.trim()) {
+            ok = false;
+          }
+        });
+        companyError.classList.toggle("hidden", ok);
+        return ok;
+      }
 
-      <section class="section" id="section-B">
-        <h3>B. 現場吊旗雙面廣告</h3>
-        <div class="note">
-          <div class="subtitle">廣告資料：</div>
-          <ul class="small-text" style="margin:4px 0 0 16px;padding-left:0;">
-            <li>尺寸：4.5’(W) x 8’(H)；四邊預留 3mm 出血位</li>
-            <li>定價：港幣 $8,000（包括廣告位置及製作，設計檔案由客戶提供）</li>
-            <li>位置有限，先到先得。</li>
-          </ul>
-        </div>
-        <div class="field">
-          <label>是否確認訂購現場吊旗雙面廣告</label>
-          <div class="radio-group">
-            <label class="radio-item">
-              <input type="radio" name="B_是否訂購吊旗" value="是，確認訂購（$8,000）" />
-              <span>是，確認訂購（$8,000）</span>
-            </label>
-            <label class="radio-item">
-              <input type="radio" name="B_是否訂購吊旗" value="否 / 不適用" />
-              <span>否 / 不適用</span>
-            </label>
-          </div>
-        </div>
-      </section>
+      // 驗證 二、本公司擬訂購／贊助項目：至少選 A/B/C/D 其中一項
+      function hasAnyItemSelected() {
+        const a = form["項目A_晚宴場刊廣告"].checked;
+        const b = form["項目B_現場吊旗雙面廣告"].checked;
+        const c = form["項目C_套餐優惠"].checked;
+        const d = form["項目D_贊助枱獎"].checked;
+        return a || b || c || d;
+      }
 
-      <section class="section" id="section-C">
-        <h3>C. 晚宴場刊及現場吊旗雙面廣告套餐優惠</h3>
-        <div class="note">
-          <div class="subtitle">套餐內容及價目：</div>
-          <ul class="small-text" style="margin:4px 0 0 16px;padding-left:0;">
-            <li>全版內頁廣告 + 吊旗雙面廣告：原價 $18,000，優惠套餐價 $16,200</li>
-            <li>半版內頁廣告 + 吊旗雙面廣告：原價 $14,000，優惠套餐價 $12,600</li>
-          </ul>
-        </div>
-        <div class="field">
-          <label>套餐類別選擇</label>
-          <div class="radio-group">
-            <label class="radio-item">
-              <input type="radio" name="C_套餐選擇" value="全版 + 吊旗（$16,200）" />
-              <span>全版內頁廣告 + 吊旗雙面廣告（套餐價：$16,200）</span>
-            </label>
-            <label class="radio-item">
-              <input type="radio" name="C_套餐選擇" value="半版 + 吊旗（$12,600）" />
-              <span>半版內頁廣告 + 吊旗雙面廣告（套餐價：$12,600）</span>
-            </label>
-            <label class="radio-item">
-              <input type="radio" name="C_套餐選擇" value="不訂購 / 不適用" />
-              <span>不訂購 / 不適用</span>
-            </label>
-          </div>
-        </div>
-      </section>
+      function validateItemsSection() {
+        const ok = hasAnyItemSelected();
+        itemsError.classList.toggle("hidden", ok);
+        return ok;
+      }
 
-      <section class="section" id="section-D">
-        <h3>D. 贊助枱獎</h3>
-        <div class="note">
-          <ul class="small-text" style="margin:4px 0 0 16px;padding-left:0;">
-            <li>禮物擬由得獎公司以產品或產品代用券形式贊助，數量約為 80–100 件。</li>
-            <li>贊助物品請於 <strong>2026 年 1 月 19 至 20 日</strong> 期間送交：香港中環干諾道中 64 號廠商會大廈 23 樓 B 室。</li>
-          </ul>
-        </div>
+      // 驗證同意條款
+      function validateConfirmSection() {
+        const checked = form["確認同意條款"].checked;
+        confirmError.classList.toggle("hidden", checked);
+        return checked;
+      }
 
-        <div class="field-group">
-          <div class="field">
-            <label>產品名稱</label>
-            <input type="text" name="D_產品名稱" />
-          </div>
-          <div class="field">
-            <label>數量</label>
-            <input type="number" name="D_產品數量" min="0" />
-          </div>
-        </div>
-        <div class="field-group">
-          <div class="field">
-            <label>產品價值（請註明為每件或總值）</label>
-            <input type="text" name="D_產品價值" />
-          </div>
-          <div class="field">
-            <label>產品尺寸（體積／包裝大小等）</label>
-            <input type="text" name="D_產品尺寸" />
-          </div>
-        </div>
-      </section>
+      form.addEventListener("submit", function (e) {
+        const okCompany = validateCompanySection();
+        const okItems = validateItemsSection();
+        const okConfirm = validateConfirmSection();
 
-      <section class="section" id="section-terms">
-        <h3>重要說明及條款</h3>
-        <div class="note">
-          <div class="subtitle">廣告來稿標準：</div>
-          <ul class="small-text" style="margin:4px 0 0 16px;padding-left:0;">
-            <li>廣告檔案類型：AI、JPEG、TIF</li>
-            <li>解像度：350 DPI 或以上</li>
-            <li>廣告檔案最遲須於 <strong>1 月 14 日中午 12 時前</strong>，以電郵發送至秘書處（<a href="mailto:sor1@cma.org.hk">sor1@cma.org.hk</a>）。</li>
-          </ul>
-          <div class="subtitle" style="margin-top:8px;">付款安排（適用於訂購廣告項目）：</div>
-          <ul class="small-text" style="margin:4px 0 0 16px;padding-left:0;">
-            <li>請將劃線支票祈付「香港品牌發展局有限公司」，逕交本局：</li>
-            <li>地址：香港中環干諾道中 64 號廠商會大廈 3 樓。</li>
-          </ul>
-          <div class="subtitle" style="margin-top:8px;">活動安排：</div>
-          <ul class="small-text" style="margin:4px 0 0 16px;padding-left:0;">
-            <li>主辦機構有權因應特別情況而變更頒獎典禮暨晚宴的時間、形式及安排，無需事先通知。</li>
-          </ul>
-        </div>
+        const allOk = okCompany && okItems && okConfirm;
 
-        <div class="field">
-          <label>資料確認<span class="required">*</span></label>
-          <div class="checkbox-group">
-            <label class="checkbox-item">
-              <input type="checkbox" name="同意條款" />
-              <span>本人／本公司確認上述資料正確無誤，並同意相關條款及安排。</span>
-            </label>
-          </div>
-          <div id="agreeError" class="alert hidden">
-            請勾選確
-            認同意條款及安排。
-          </div>
-        </div>
-
-        <div class="field">
-          <label>其他備註或特別要求</label>
-          <textarea name="其他備註" placeholder="如有其他安排或備註，可在此填寫。"></textarea>
-        </div>
-
-        <div class="button-row">
-          <button type="button" class="secondary" id="resetBtn">重設</button>
-          <button type="submit" class="primary">提交電子回條</button>
-        </div>
-
-        <div id="formError" class="alert hidden">
-          表格部分資料未填妥，請檢查上面提示後再嘗試提交。
-        </div>
-        <div id="formSuccess" class="success hidden">
-          已成功提交！系統將把回覆內容透過電郵傳送至秘書處。如未在數分鐘內收到電郵，請檢查垃圾郵件箱或與秘書處聯絡。
-        </div>
-      </section>
-    </form>
-  </div>
-
-  <script>
-    const form = document.getElementById("brandForm");
-    const itemsError = document.getElementById("itemsError");
-    const agreeError = document.getElementById("agreeError");
-    const formError = document.getElementById("formError");
-    const formSuccess = document.getElementById("formSuccess");
-    const resetBtn = document.getElementById("resetBtn");
-
-   function hasAnyItemSelected() {
-  const a = form["項目A_晚宴場刊廣告"].checked;
-  const b = form["項目B_現場吊旗雙面廣告"].checked;
-  const c = form["項目C_套餐優惠"].checked;
-  const d = form["項目D_贊助枱獎"].checked;
-  const e = form["項目E_不適用"].checked; // 「不適用」
-
-  // 規則：
-  // 1. 如果「不適用」有揀，就直接當合格（唔理 A-D）。
-  if (e) return true;
-
-  // 2. 如果冇揀「不適用」，就要至少揀一項 A / B / C / D。
-  return a || b || c || d;
-}
-
-    function validateRequiredBasics() {
-      let valid = true;
-      const requiredNames = ["公司名稱", "聯絡人姓名", "聯絡電話", "電郵"];
-      requiredNames.forEach((name) => {
-        const el = form.elements[name];
-        if (!el) return;
-        if (!el.value.trim()) {
-          el.style.borderColor = "#c0392b";
-          valid = false;
+        if (!allOk) {
+          e.preventDefault();
+          formError.classList.remove("hidden");
+          successMessage.classList.remove("show");
+          window.scrollTo({ top: 0, behavior: "smooth" });
         } else {
-          el.style.borderColor = "";
+          formError.classList.add("hidden");
+          // 提交後由 formsubmit 轉到 thanks.html
         }
       });
-      return valid;
-    }
 
-    function validateAgreeTerms() {
-      if (!form["同意條款"].checked) {
-        agreeError.classList.remove("hidden");
-        return false;
-      } else {
-        agreeError.classList.add("hidden");
-        return true;
-      }
-    }
+      // 即時失焦驗證
+      ["公司名稱", "聯絡人姓名", "聯絡電話", "電子郵件"].forEach((name) => {
+        const input = form.elements[name];
+        if (input) {
+          input.addEventListener("blur", validateCompanySection);
+        }
+      });
 
-    function clearAlerts() {
-      itemsError.classList.add("hidden");
-      agreeError.classList.add("hidden");
-      formError.classList.add("hidden");
-      formSuccess.classList.add("hidden");
-    }
+      // 即時變更檢查 A/B/C/D
+      const itemCheckboxNames = [
+        "項目A_晚宴場刊廣告",
+        "項目B_現場吊旗雙面廣告",
+        "項目C_套餐優惠",
+        "項目D_贊助枱獎",
+      ];
+      itemCheckboxNames.forEach((name) => {
+        const input = form.elements[name];
+        if (input) {
+          input.addEventListener("change", validateItemsSection);
+        }
+      });
 
-    form.addEventListener("submit", function (e) {
-      clearAlerts();
-
-      let valid = true;
-
-      if (!validateRequiredBasics()) valid = false;
-
-      if (!hasAnyItemSelected()) {
-        itemsError.classList.remove("hidden");
-        valid = false;
-      }
-
-      if (!validateAgreeTerms()) valid = false;
-
-      if (!valid) {
-        e.preventDefault();
-        formError.classList.remove("hidden");
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        return;
-      }
-      // 通過驗證 → 正常 POST 至 Formsubmit
-    });
-
-    resetBtn.addEventListener("click", function () {
-      form.reset();
-      clearAlerts();
-      const inputs = form.querySelectorAll("input, textarea, select");
-      inputs.forEach((el) => (el.style.borderColor = ""));
-    });
-  </script>
-</body>
+      form["確認同意條款"].addEventListener(
+        "change",
+        validateConfirmSection
+      );
+    </script>
+  </body>
 </html>
