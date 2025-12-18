@@ -529,13 +529,20 @@
     const formSuccess = document.getElementById("formSuccess");
     const resetBtn = document.getElementById("resetBtn");
 
-    function hasAnyItemSelected() {
-      const a = form["項目A_晚宴場刊廣告"].checked;
-      const b = form["項目B_現場吊旗雙面廣告"].checked;
-      const c = form["項目C_套餐優惠"].checked;
-      const d = form["項目D_贊助枱獎"].checked;
-      return a || b || c || d;
-    }
+   function hasAnyItemSelected() {
+  const a = form["項目A_晚宴場刊廣告"].checked;
+  const b = form["項目B_現場吊旗雙面廣告"].checked;
+  const c = form["項目C_套餐優惠"].checked;
+  const d = form["項目D_贊助枱獎"].checked;
+  const e = form["項目E_不適用"].checked; // 「不適用」
+
+  // 規則：
+  // 1. 如果「不適用」有揀，就直接當合格（唔理 A-D）。
+  if (e) return true;
+
+  // 2. 如果冇揀「不適用」，就要至少揀一項 A / B / C / D。
+  return a || b || c || d;
+}
 
     function validateRequiredBasics() {
       let valid = true;
